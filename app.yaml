@@ -1,0 +1,32 @@
+# ============================================================================
+# Google App Engine Configuration (Alternative to Cloud Run)
+# ============================================================================
+runtime: nodejs20
+instance_class: F2
+
+env_variables:
+  NODE_ENV: "production"
+  GCP_PROJECT_ID: "sena-mobility-ke-prod"
+  GCP_REGION: "africa-south1"
+  GCS_ASSETS_BUCKET: "sena-mobility-3d-assets-prod"
+  META_GRAPH_API_VERSION: "v21.0"
+  KDPA_2019_ACT_URL: "http://kenyalaw.org:8181/exist/kenyalex/actview.xql?actid=No.%2024%20of%202019"
+  ODPC_KENYA_PORTAL_URL: "https://www.odpc.go.ke/data-protection-act/"
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
+  target_cpu_utilization: 0.65
+
+handlers:
+  - url: /assets
+    static_dir: public/assets
+    secure: always
+    expiration: "7d"
+    http_headers:
+      Access-Control-Allow-Origin: "*"
+      Cache-Control: "public, max-age=604800, immutable"
+
+  - url: /.*
+    script: auto
+    secure: always
