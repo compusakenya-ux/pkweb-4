@@ -1,0 +1,36 @@
+{
+  "name": "sena-transit-gcp-landing",
+  "version": "1.0.0",
+  "description": "SENA — Next-Gen Electric Transit & Smart Mobility 3D Landing Page with Meta WhatsApp Business Cloud API & GCP Hosting",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "gcp:check": "node -e \"console.log('GCP & Meta Config Validated')\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^11.1.0",
+    "@google-cloud/secret-manager": "^5.6.0",
+    "@google-cloud/storage": "^7.14.0",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0"
+  },
+  "keywords": [
+    "sena",
+    "mombasa",
+    "electric-mobility",
+    "3d-landing-page",
+    "whatsapp-cloud-api",
+    "meta-business",
+    "kenya-data-protection-act-2019",
+    "google-cloud-run",
+    "google-cloud-storage"
+  ],
+  "license": "Proprietary"
+}
