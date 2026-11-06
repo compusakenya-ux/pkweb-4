@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poughkeepsie Limited | SENA Transit ⚡ Next-Gen 3D Transport Ecosystem — Mombasa</title>
+  <meta name="description" content="Poughkeepsie Limited — Next-gen smart transport ecosystem in Kenya. Featuring SENA Transit (Twende Kazi) 3D visual clarity showcase, Meta Business WhatsApp Chatbot, GCP Cloud Run architecture, and Kenya Data Protection Act 2019 compliance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Three.js for 3D WebGL Spatial Telemetry Scene -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+</head>
+<body>
+  <!-- Real-Time 3D WebGL Spatial Telemetry Background -->
+  <canvas id="webgl-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Telemetry & Kenya Data Protection Act 2019 Compliance Bar -->
+  <div class="top-ribbon">
+    <div class="ribbon-left">
+      <span class="status-pill">
+        <span class="pulse-dot"></span>
+        POUGHKEEPSIE LIMITED • GCP AFRICA-SOUTH1
+      </span>
+      <span style="color: var(--text-secondary);">
+        ⚡ <strong>SENA Transit</strong> E-Fleet Active: <strong style="color: #fff;">City Center • Mombasa Road • Nyali Beach</strong>
+      </span>
+    </div>
+    <div class="ribbon-right">
+      <a href="tel:+254700736200" class="kdpa-top-link" style="color: #cbd5e1;" title="Call Poughkeepsie Limited">
+        📞 +254 700 736 200
+      </a>
+      <a href="mailto:info@poughkeepsie.co.ke" class="kdpa-top-link" style="color: #cbd5e1;" title="Email Poughkeepsie Limited">
+        ✉️ info@poughkeepsie.co.ke
+      </a>
+      <a
+        href="https://www.facebook.com/search/top?q=Poughkeepsie%20Limited"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="kdpa-top-link"
+        style="color: #60a5fa;"
+        title="Poughkeepsie Limited on Facebook"
+      >
+        📘 Facebook (Poughkeepsie Limited) ↗
+      </a>
+      <a
+        href="http://kenyalaw.org:8181/exist/kenyalex/actview.xql?actid=No.%2024%20of%202019"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="kdpa-top-link"
+        title="Read the official Kenya Data Protection Act, 2019 (No. 24 of 2019)"
+      >
+        🛡️ Kenya Data Protection Act 2019 ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#top" class="brand-logo">
+        <div>
+          <span class="brand-wordmark">SENA</span>
+          <span class="brand-sub">By Poughkeepsie Limited</span>
+        </div>
+        <span class="brand-bolt" title="Poughkeepsie Limited Transport Ecosystem">⚡</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#clarity-lab">3D Image Clarity Lab</a></li>
+        <li><a href="#services">Transport Ecosystem</a></li>
+        <li><a href="#kdpa-compliance">KDPA 2019 &amp; GCP</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline-cyan">
+          📞 Contact Poughkeepsie
+        </a>
+        <button type="button" class="btn btn-whatsapp" id="nav-whatsapp-btn">
+          💬 Meta WhatsApp Bot
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ======================================================================
+         HERO SECTION — 3D SPATIAL DIORAMA + STARTUP CLARITY
+         ====================================================================== -->
+    <section class="section-container hero-section">
+      <div class="hero-grid">
+        <!-- Left Column: Brand Story & Clarity Mission -->
+        <div class="hero-copy">
+          <div class="eyebrow-badge">
+            <span>⚡ POUGHKEEPSIE LIMITED • SMART TRANSPORT ECOSYSTEM</span>
+          </div>
+
+          <h1 class="hero-title">
+            Next-Gen Mobility by <span style="color: var(--sena-cyan);">Poughkeepsie Limited</span>.
+            Featuring <span class="gradient-amber">SENA Transit</span> —
+            <span class="swahili-script">Twende Kazi.</span>
+          </h1>
+
+          <p class="hero-lead">
+            <strong>Poughkeepsie Limited</strong> builds high-clarity intelligent transport infrastructure
+            across Kenya. Explore our flagship commuter product, <strong>SENA Transit</strong>—powered by
+            <strong>3D spatial telemetry</strong>, upfront <strong>KES fare transparency</strong>,
+            instant <strong>Meta Business WhatsApp dispatch</strong>, and cloud-native hosting on
+            <strong>Google Cloud Platform (GCP)</strong>.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#clarity-lab" class="btn btn-amber">
+              🔮 Explore 3D Image Clarity Lab
+            </a>
+            <button type="button" class="btn btn-whatsapp" id="hero-whatsapp-btn">
+              📲 Launch Journey on WhatsApp
+            </button>
+            <a href="#contact" class="btn btn-outline-cyan">
+              📞 Contact Poughkeepsie Limited
+            </a>
+          </div>
+
+          <div class="hero-telemetry-strip">
+            <div class="telemetry-stat">
+              <span class="telemetry-val">KES 132</span>
+              <span class="telemetry-lbl">Standard E-Bike (Base KES 40)</span>
+            </div>
+            <div class="telemetry-stat">
+              <span class="telemetry-val">210 KM</span>
+              <span class="telemetry-lbl">3-Seater E-Tuk-Tuk Range</span>
+            </div>
+            <div class="telemetry-stat">
+              <span class="telemetry-val">100% 3D</span>
+              <span class="telemetry-lbl">Optical &amp; Fare Clarity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive 3D Holographic Stage -->
+        <div class="hero-3d-stage-wrapper">
+          <div class="stage-mode-tabs" role="tablist" aria-label="3D Stage Asset Selector">
+            <button type="button" class="stage-tab active" data-stage-img="assets/sena-street-ar.jpg" data-stage-label="Mombasa AR Street HUD (Photo 1 + 2 in 3D)">
+              1. AR Street Hologram (3D)
+            </button>
+            <button type="button" class="stage-tab" data-stage-img="assets/sena-3d-fleet.jpg" data-stage-label="3D Autonomous E-Fleet Dock (Extra 3D Render)">
+              2. Full 3D E-Fleet Render
+            </button>
+            <button type="button" class="stage-tab" data-stage-img="assets/sena-mobile-splash.jpg" data-stage-label="SENA Hyper-Fluid Mobile Core (3D Chassis)">
+              3. SENA Mobile UI (3D)
+            </button>
+          </div>
+
+          <div class="holo-3d-rig auto-orbit" id="hero-holo-rig">
+            <div class="holo-glare" id="hero-holo-glare"></div>
+            <div class="holo-grid-floor"></div>
+
+            <!-- Extruded 3D Top Badge -->
+            <div class="extruded-hud-chip chip-top-left" id="hero-stage-chip">
+              ⚡ SDR FR-C011 • Realtime E-Fleet Network Active
+            </div>
+
+            <!-- Main Extruded 3D Photo Plane -->
+            <div class="holo-main-media">
+              <img
+                id="hero-stage-main-img"
+                src="assets/sena-street-ar.jpg"
+                alt="SENA 3D Holographic Transit Showcase in Mombasa"
+              />
+            </div>
+
+            <!-- Secondary Extruded 3D Mobile Splash Plane (Photo 2 in 3D) -->
+            <div class="holo-floating-phone" title="SENA Mobile App Splash — Powering Mombasa">
+              <img
+                src="assets/sena-mobile-splash.jpg"
+                alt="SENA Next-gen transit hyper-fluid speed mobile splash screen"
+              />
+            </div>
+
+            <!-- Extruded 3D Bottom Pricing Badge -->
+            <div class="extruded-hud-chip chip-bottom-left">
+              🏍️ Standard Bike: <strong style="color: var(--sena-amber);">KES 132</strong> &nbsp;|&nbsp; 🛺 3-Seater E-Tuk-Tuk
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: TRIPLE 3D GALLERY & IMAGE CLARITY EXPLORER LAB
+         (Both given photos in 3D + 1 Extra Full 3D Image on Main Page)
+         ====================================================================== -->
+    <section class="section-container" id="clarity-lab">
+      <div class="section-header">
+        <div class="eyebrow-badge">🔬 3D OPTICAL &amp; SERVICE CLARITY ENGINE</div>
+        <h2 class="section-title">
+          Three 3D Perspectives. Zero Ambiguity in Urban Transit.
+        </h2>
+        <p class="section-subtitle">
+          Interact with both uploaded SENA brand photographs and our custom 3D E-Fleet render below.
+          Move your cursor over any 3D card to tilt in 3D space and activate the
+          <strong>4K Optical Clarity Loupe</strong> to inspect micro-details of our startup’s HUD,
+          pricing transparency, and electric vehicle engineering.
+        </p>
+      </div>
+
+      <!-- Interactive 3D & Optical Clarity Controls -->
+      <div class="clarity-toolbar">
+        <div class="toolbar-group">
+          <label class="toolbar-label" for="depth-slider">3D Z-Depth Extrusion:</label>
+          <input
+            type="range"
+            id="depth-slider"
+            class="toolbar-slider"
+            min="15"
+            max="95"
+            value="55"
+          />
+          <span id="depth-val-label" style="font-size: 0.82rem; color: #fff; font-weight: 700;">55px</span>
+        </div>
+
+        <div class="toolbar-group">
+          <label class="toolbar-label" for="clarity-slider">Optical Micro-Clarity:</label>
+          <input
+            type="range"
+            id="clarity-slider"
+            class="toolbar-slider"
+            min="100"
+            max="145"
+            value="112"
+          />
+          <span id="clarity-val-label" style="font-size: 0.82rem; color: #fff; font-weight: 700;">112% HDR</span>
+        </div>
+
+        <div class="toolbar-group">
+          <button type="button" class="stage-tab active" id="toggle-loupe-btn">
+            🔍 4K Clarity Loupe: ON
+          </button>
+          <button type="button" class="stage-tab" id="toggle-lidar-btn">
+            📡 LiDAR Telemetry Mesh: OFF
+          </button>
+          <button type="button" class="stage-tab active" id="toggle-orbit-btn">
+            🔄 3D Auto-Orbit: ON
+          </button>
+        </div>
+      </div>
+
+      <!-- 3-Column 3D Interactive Cards (Photo 1 + Photo 2 + Extra 3D Photo 3) -->
+      <div class="tri-3d-grid">
+        <!-- 3D CARD 1: Uploaded Asset 1 (Mombasa Street AR HUD) -->
+        <div class="card-3d-wrap">
+          <article class="card-3d js-tilt-card">
+            <span class="card-3d-badge">3D ASSET 01 • AR HOLOGRAM CLARITY</span>
+            <div class="card-3d-viewport js-loupe-viewport" data-img="assets/sena-street-ar.jpg">
+              <img
+                src="assets/sena-street-ar.jpg"
+                alt="SENA Twende Kazi AR Interface on Mombasa Street in 3D"
+              />
+              <div class="lidar-scan-overlay"></div>
+              <div class="optical-loupe enabled"></div>
+            </div>
+            <div class="card-3d-body">
+              <div>
+                <h3 class="card-3d-title">1. Street-Level AR Fare &amp; Route Clarity</h3>
+                <p class="card-3d-desc">
+                  High-clarity augmented reality HUD projecting real-time Mombasa E-Fleet corridors
+                  (<strong>City Center</strong>, <strong>Mombasa Road</strong>, and <strong>Nyali Beach</strong>)
+                  with upfront vehicle selection (<code>SDR FR-C011</code>).
+                </p>
+              </div>
+              <ul class="clarity-metrics-list">
+                <li><span>Standard Bike (Base KES 40 • 1 Pax)</span> <strong>KES 132</strong></li>
+                <li><span>3-Seater Tuk-Tuk Option</span> <strong>Instant Request</strong></li>
+                <li><span>Optical HUD Contrast</span> <strong>Ultra-Clear 3D</strong></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3D CARD 2: Uploaded Asset 2 (SENA Mobile App Splash in 3D) -->
+        <div class="card-3d-wrap">
+          <article class="card-3d js-tilt-card">
+            <span class="card-3d-badge">3D ASSET 02 • MOBILE CORE CLARITY</span>
+            <div class="card-3d-viewport portrait-fit js-loupe-viewport" data-img="assets/sena-mobile-splash.jpg">
+              <img
+                src="assets/sena-mobile-splash.jpg"
+                alt="SENA Next-gen transit hyper-fluid speed mobile interface in 3D"
+              />
+              <div class="lidar-scan-overlay"></div>
+              <div class="optical-loupe enabled"></div>
+            </div>
+            <div class="card-3d-body">
+              <div>
+                <h3 class="card-3d-title">2. Hyper-Fluid Mobile Interface Clarity</h3>
+                <p class="card-3d-desc">
+                  Zero-clutter dark obsidian mobile ergonomics engineered for cognitive speed under
+                  coastal sunlight or night transit—featuring one-tap <strong>LAUNCH JOURNEY</strong>
+                  dispatch across Mombasa.
+                </p>
+              </div>
+              <ul class="clarity-metrics-list">
+                <li><span>Tagline</span> <strong>Next-gen transit, hyper-fluid speed</strong></li>
+                <li><span>Regional Core</span> <strong>POWERING MOMBASA ⚡</strong></li>
+                <li><span>Dispatch Latency</span> <strong>&lt; 1.2s via GCP Cloud Run</strong></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3D CARD 3: Custom Generated Extra Fully-3D Image (E-Tuk-Tuk & E-Boda Fleet) -->
+        <div class="card-3d-wrap">
+          <article class="card-3d js-tilt-card">
+            <span class="card-3d-badge" style="border-color: var(--sena-amber); color: var(--sena-amber);">
+              3D ASSET 03 • EXTRA FULL-3D FLEET RENDER
+            </span>
+            <div class="card-3d-viewport js-loupe-viewport" data-img="assets/sena-3d-fleet.jpg">
+              <img
+                src="assets/sena-3d-fleet.jpg"
+                alt="Full 3D Isometric Render of SENA Electric Tuk-Tuk and Smart E-Boda Boda in Mombasa"
+              />
+              <div class="lidar-scan-overlay"></div>
+              <div class="optical-loupe enabled"></div>
+            </div>
+            <div class="card-3d-body">
+              <div>
+                <h3 class="card-3d-title">3. 3D Hardware &amp; Battery Telemetry Clarity</h3>
+                <p class="card-3d-desc">
+                  Our custom full-3D isometric architectural render showcasing
+                  <strong>E-TU TUK 01</strong> (87% Battery | 210 KM Range) alongside
+                  <strong>E-BODA BODA 14</strong> (92% Battery | Dest. Nyali) on a smart inductive charging pad.
+                </p>
+              </div>
+              <ul class="clarity-metrics-list">
+                <li><span>E-Tuk-Tuk 01 Telemetry</span> <strong>87% Bat • 210 KM Range</strong></li>
+                <li><span>E-Boda Boda 14 Telemetry</span> <strong>92% Bat • Dest. Nyali</strong></li>
+                <li><span>Propulsion</span> <strong>100% Zero-Emission Electric</strong></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: POUGHKEEPSIE LIMITED & SENA TRANSIT ECOSYSTEM CLARITY
+         ====================================================================== -->
+    <section class="section-container" id="services">
+      <div class="section-header">
+        <div class="eyebrow-badge">🚀 POUGHKEEPSIE LIMITED • TRANSPORT ECOSYSTEM</div>
+        <h2 class="section-title">One Visionary Company. A Complete Mobility Ecosystem.</h2>
+        <p class="section-subtitle">
+          <strong>Poughkeepsie Limited</strong> engineers interconnected mobility, telemetry, and clean-energy
+          solutions. <strong>SENA Transit (Twende Kazi)</strong> is our flagship passenger and micro-mobility
+          product powering Mombasa with total visual, pricing, and operational clarity.
+        </p>
+      </div>
+
+      <!-- Poughkeepsie Limited Ecosystem Overview Banner -->
+      <div class="ecosystem-banner">
+        <div>
+          <div style="font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em; color: var(--sena-amber); text-transform: uppercase;">
+            Parent Organization • Poughkeepsie Limited
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 800; margin-top: 0.25rem;">
+            Poughkeepsie Transport Ecosystem &amp; Product Suite
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">
+            1️⃣ <strong>SENA Transit</strong> (Passenger E-Bikes &amp; 3-Seater E-Tuk-Tuks) &nbsp;•&nbsp;
+            2️⃣ <strong>Poughkeepsie GridOS</strong> (EV Battery Swap &amp; Solar Telemetry) &nbsp;•&nbsp;
+            3️⃣ <strong>Poughkeepsie Cargo &amp; Fleet API</strong> (Last-Mile Coastal Logistics)
+          </p>
+        </div>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button type="button" class="btn btn-outline-cyan" id="open-kdpa-modal-btn">
+            🛡️ KDPA 2019 Charter
+          </button>
+          <a href="#contact" class="btn btn-amber">
+            🤝 Partner with Poughkeepsie
+          </a>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-box">
+          <div class="service-icon">🏍️</div>
+          <span class="service-price-tag">Base KES 40 • Typical Ride KES 132</span>
+          <h3 class="card-3d-title">SENA Standard E-Bike (1 Pax)</h3>
+          <p class="card-3d-desc">
+            Agile, whisper-quiet electric smart motorbikes engineered to beat Mombasa traffic between
+            <strong>City Center</strong>, <strong>Mombasa Road</strong>, and <strong>Nyali Beach</strong>.
+            Includes two sanitized smart helmets and live GPS telemetry sharing.
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-cyan js-quick-wa-trigger"
+            data-wa-prompt="Book Standard Bike (KES 132)"
+          >
+            ⚡ Request Standard Bike via WhatsApp
+          </button>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">🛺</div>
+          <span class="service-price-tag">Base KES 80 • Up to 3 Passengers</span>
+          <h3 class="card-3d-title">SENA 3-Seater Electric Tuk-Tuk</h3>
+          <p class="card-3d-desc">
+            Aerodynamic next-gen 3-seater cabin with panoramic solar-tinted glass, 210 KM range per
+            charge, weather protection, and crystal-clear group fare splitting via M-Pesa and WhatsApp.
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-cyan js-quick-wa-trigger"
+            data-wa-prompt="Request 3-Seater Tuk-Tuk"
+          >
+            🛺 Book 3-Seater E-Tuk-Tuk
+          </button>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">💬</div>
+          <span class="service-price-tag">Meta Business Cloud API v21.0</span>
+          <h3 class="card-3d-title">Instant WhatsApp Autonomous Dispatch</h3>
+          <p class="card-3d-desc">
+            No heavy app download required when you’re on the move. Message our verified
+            <strong>Meta Business Account WhatsApp Bot</strong> to check live KES fares, share your
+            location pin, and track your rider in seconds.
+          </p>
+          <button
+            type="button"
+            class="btn btn-whatsapp js-quick-wa-trigger"
+            data-wa-prompt="Explore 3D Service Clarity"
+          >
+            💬 Chat with Meta Business Bot
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 4: KENYA DATA PROTECTION ACT 2019 & GCP CLOUD ARCHITECTURE
+         ====================================================================== -->
+    <section class="section-container" id="kdpa-compliance">
+      <div class="compliance-gcp-grid">
+        <!-- Kenya Data Protection Act 2019 Panel -->
+        <div class="panel-card kdpa-card">
+          <span class="panel-header-badge" style="background: rgba(255, 158, 94, 0.15); color: var(--sena-amber);">
+            ⚖️ STATUTORY PRIVACY &amp; LEGAL COMPLIANCE
+          </span>
+          <h2 style="font-size: 1.65rem; font-weight: 800; margin-bottom: 0.75rem;">
+            Kenya Data Protection Act, 2019 (No. 24 of 2019)
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 0.94rem; line-height: 1.65; margin-bottom: 1rem;">
+            Transparency is the foundation of image and service clarity. SENA processes all commuter
+            identity records, Mombasa GPS pickup pins, M-Pesa billing logs, and Meta WhatsApp Business
+            conversations in strict compliance with the <strong>Kenya Data Protection Act, 2019</strong>
+            and the regulations of the <strong>Office of the Data Protection Commissioner (ODPC)</strong>.
+          </p>
+          <ul class="clarity-metrics-list">
+            <li><span>Part IV (Sec. 25) — Data Protection Principles</span> <strong>Lawful &amp; Purpose-Bound</strong></li>
+            <li><span>Part V (Sec. 26) — Rights of Data Subjects</span> <strong>Access, Correction &amp; Deletion</strong></li>
+            <li><span>Part VI (Sec. 41) — Cross-Border GCP Safeguards</span> <strong>TLS 1.3 + AES-256 CMEK</strong></li>
+          </ul>
+
+          <div class="kdpa-links-row">
+            <a
+              href="http://kenyalaw.org:8181/exist/kenyalex/actview.xql?actid=No.%2024%20of%202019"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-amber"
+            >
+              📜 Read Kenya Data Protection Act 2019 (Kenya Law) ↗
+            </a>
+            <a
+              href="https://www.odpc.go.ke/data-protection-act/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-cyan"
+            >
+              🏛️ ODPC Official Act Portal ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Cloud Platform (GCP) Hosting & Meta Business Telemetry Panel -->
+        <div class="panel-card" id="gcp-architecture">
+          <span class="panel-header-badge">
+            ☁️ GOOGLE CLOUD PLATFORM (GCP) NATIVE STACK
+          </span>
+          <h2 style="font-size: 1.65rem; font-weight: 800; margin-bottom: 0.75rem;">
+            GCP Cloud Run, Cloud Storage &amp; Meta Webhook Runtime
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 0.94rem; line-height: 1.65;">
+            All 3D visual assets, WebGL shaders, and the Meta Business WhatsApp Cloud API webhook
+            (<code>/api/whatsapp/webhook</code>) are configured for serverless hosting on
+            <strong>Google Cloud Platform</strong> with Terraform IaC (<code>infra/main.tf</code>),
+            <code>cloudbuild.yaml</code>, <code>Dockerfile</code>, and <code>app.yaml</code>.
+          </p>
+
+          <div class="code-status-box" id="gcp-live-status-box">
+            Fetching live GCP Cloud Run &amp; Meta Business Account telemetry...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 5: CONTACT POUGHKEEPSIE LIMITED (TEL, EMAIL, FACEBOOK, WHATSAPP)
+         ====================================================================== -->
+    <section class="section-container" id="contact">
+      <div class="section-header">
+        <div class="eyebrow-badge">📬 CONNECT WITH POUGHKEEPSIE LIMITED</div>
+        <h2 class="section-title">Contact Poughkeepsie Limited &amp; SENA Transit</h2>
+        <p class="section-subtitle">
+          Reach out to <strong>Poughkeepsie Limited</strong> for SENA Transit rider support, fleet
+          investment, corporate commuter partnerships, or data protection inquiries in Mombasa and across Kenya.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- 1. Telephone Contact Link -->
+        <a href="tel:+254700736200" class="contact-card" title="Call Poughkeepsie Limited directly">
+          <div>
+            <div class="contact-icon-wrap">📞</div>
+            <h3 class="card-3d-title" style="margin-top: 1rem;">Telephone (Direct Line)</h3>
+            <p class="card-3d-desc">
+              Speak directly with Poughkeepsie Limited’s Mombasa Operations &amp; SENA Transit Dispatch Desk.
+            </p>
+          </div>
+          <div style="font-weight: 800; color: var(--sena-amber); font-size: 0.98rem;">
+            Tel: +254 700 736 200 ↗
+          </div>
+        </a>
+
+        <!-- 2. Email Contact Link -->
+        <a href="mailto:info@poughkeepsie.co.ke?subject=Poughkeepsie%20Limited%20-%20SENA%20Transit%20Inquiry" class="contact-card" title="Email Poughkeepsie Limited">
+          <div>
+            <div class="contact-icon-wrap">✉️</div>
+            <h3 class="card-3d-title" style="margin-top: 1rem;">Official Email</h3>
+            <p class="card-3d-desc">
+              Enterprise partnerships, ecosystem integration, investor relations, and KDPA 2019 Data Protection Officer.
+            </p>
+          </div>
+          <div style="font-weight: 800; color: var(--sena-cyan); font-size: 0.92rem;">
+            info@poughkeepsie.co.ke ↗
+          </div>
+        </a>
+
+        <!-- 3. Facebook (Poughkeepsie Limited) Link -->
+        <a
+          href="https://www.facebook.com/search/top?q=Poughkeepsie%20Limited"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card fb-card"
+          title="Visit Poughkeepsie Limited on Facebook"
+        >
+          <div>
+            <div class="contact-icon-wrap">📘</div>
+            <h3 class="card-3d-title" style="margin-top: 1rem;">Facebook Page</h3>
+            <p class="card-3d-desc">
+              Follow <strong>Poughkeepsie Limited</strong> on Facebook for SENA Transit coastal rollouts, E-Fleet updates &amp; community news.
+            </p>
+          </div>
+          <div style="font-weight: 800; color: #60a5fa; font-size: 0.92rem;">
+            Facebook: Poughkeepsie Limited ↗
+          </div>
+        </a>
+
+        <!-- 4. Meta Business WhatsApp Bot Link -->
+        <div
+          class="contact-card js-quick-wa-trigger"
+          data-wa-prompt="Contact Poughkeepsie Limited"
+          style="cursor: pointer;"
+          role="button"
+          tabindex="0"
+        >
+          <div>
+            <div class="contact-icon-wrap" style="background: rgba(37, 211, 102, 0.15); border-color: rgba(37, 211, 102, 0.45);">
+              💬
+            </div>
+            <h3 class="card-3d-title" style="margin-top: 1rem;">Meta Business WhatsApp</h3>
+            <p class="card-3d-desc">
+              Instant automated SENA Transit booking &amp; Poughkeepsie Limited support linked to our Meta Business Account.
+            </p>
+          </div>
+          <div style="font-weight: 800; color: #4ade80; font-size: 0.92rem;">
+            Launch WhatsApp Chat ↗
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FLOATING META BUSINESS ACCOUNT WHATSAPP CHATBOT
+       ======================================================================== -->
+  <button
+    type="button"
+    class="whatsapp-fab"
+    id="whatsapp-fab-btn"
+    aria-label="Open SENA Meta Business WhatsApp Chatbot"
+  >
+    <span>💬 SENA WhatsApp Bot</span>
+    <span style="font-size: 0.72rem; background: rgba(0,0,0,0.28); padding: 0.15rem 0.5rem; border-radius: 999px;">
+      Meta Business
+    </span>
+  </button>
+
+  <aside class="whatsapp-drawer" id="whatsapp-drawer" aria-label="SENA Meta Business WhatsApp Assistant">
+    <div class="wa-header">
+      <div class="wa-brand-info">
+        <div class="wa-avatar">S⚡</div>
+        <div>
+          <div style="font-weight: 800; font-size: 0.92rem; display: flex; align-items: center; gap: 0.4rem;">
+            SENA Mobility Bot
+            <span class="wa-verified-badge" title="Linked to Meta Business Account">✔ Meta Verified</span>
+          </div>
+          <div style="font-size: 0.72rem; opacity: 0.88;" id="wa-header-sub">
+            WABA ID: 109482716492810 • Online
+          </div>
+        </div>
+      </div>
+      <div class="wa-header-btns">
+        <button
+          type="button"
+          class="wa-icon-btn"
+          id="wa-toggle-config-btn"
+          title="Configure Meta Business Account ID & Phone Number"
+        >
+          ⚙️
+        </button>
+        <button
+          type="button"
+          class="wa-icon-btn"
+          id="wa-close-btn"
+          title="Close WhatsApp Chat"
+        >
+          ✕
+        </button>
+      </div>
+    </div>
+
+    <!-- Meta Business Account Live Link Configuration Drawer -->
+    <div class="wa-meta-config-panel" id="wa-meta-config-panel">
+      <div style="font-weight: 700; color: var(--sena-amber); margin-bottom: 0.45rem;">
+        🔗 Meta Business Account Link Settings
+      </div>
+      <div class="wa-config-field">
+        <label for="meta-biz-id-input">Meta Business Account ID (WABA):</label>
+        <input type="text" id="meta-biz-id-input" value="104829104928174" />
+      </div>
+      <div class="wa-config-field">
+        <label for="meta-phone-id-input">Meta Phone Number ID (Cloud API):</label>
+        <input type="text" id="meta-phone-id-input" value="118492019482719" />
+      </div>
+      <div class="wa-config-field">
+        <label for="meta-wa-num-input">WhatsApp Business Number (E.164):</label>
+        <input type="text" id="meta-wa-num-input" value="254700736200" />
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+        <button type="button" class="wa-send-btn" id="save-meta-config-btn">Save &amp; Sync</button>
+        <a
+          href="#"
+          id="wa-direct-external-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #4ade80; font-size: 0.74rem; text-decoration: none; font-weight: 700;"
+        >
+          Open in WhatsApp App ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Chat Messages Container -->
+    <div class="wa-messages" id="wa-messages">
+      <div class="wa-msg bot">
+        Habari! 👋 Karibu <strong>SENA — Twende Kazi</strong> ⚡
+        Connected to SENA’s <strong>Meta Business Account</strong> on Google Cloud Platform.
+
+        Select an option below or type your Mombasa pickup point:
+        • 🏍️ <strong>Standard Bike:</strong> KES 132 (Base KES 40)
+        • 🛺 <strong>3-Seater E-Tuk-Tuk:</strong> Base KES 80
+        • 🛡️ Protected under <a href="http://kenyalaw.org:8181/exist/kenyalex/actview.xql?actid=No.%2024%20of%202019" target="_blank" rel="noopener noreferrer" style="color: #4ade80;">Kenya Data Protection Act 2019</a>
+      </div>
+    </div>
+
+    <!-- Quick Action Chips -->
+    <div class="wa-quick-chips" id="wa-quick-chips">
+      <button type="button" class="wa-chip" data-msg="Book Standard Bike (KES 132)">🏍️ Standard Bike (KES 132)</button>
+      <button type="button" class="wa-chip" data-msg="Request 3-Seater Tuk-Tuk">🛺 3-Seater Tuk-Tuk</button>
+      <button type="button" class="wa-chip" data-msg="Explore 3D Service Clarity">🔮 3D Clarity Info</button>
+      <button type="button" class="wa-chip" data-msg="KDPA 2019 Data Privacy">🛡️ KDPA 2019</button>
+    </div>
+
+    <!-- Input Form -->
+    <form class="wa-footer" id="wa-chat-form">
+      <input
+        type="text"
+        class="wa-input"
+        id="wa-input"
+        placeholder="Message SENA Meta Business Bot..."
+        autocomplete="off"
+      />
+      <button type="submit" class="wa-send-btn">Send ➤</button>
+    </form>
+  </aside>
+
+  <!-- ========================================================================
+       KENYA DATA PROTECTION ACT 2019 COMPLIANCE MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="kdpa-modal">
+    <div class="modal-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.35rem; color: var(--sena-amber);">
+          🛡️ Kenya Data Protection Act, 2019 — SENA Privacy Charter
+        </h3>
+        <button type="button" class="wa-icon-btn" id="close-kdpa-modal-btn">✕</button>
+      </div>
+      <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+        In accordance with the <strong>Kenya Data Protection Act, 2019 (Act No. 24 of 2019)</strong>,
+        <strong>Poughkeepsie Limited</strong> (operating <strong>SENA Transit</strong> and the Poughkeepsie
+        Transport Ecosystem in Mombasa, Kenya) acts as a registered Data Controller and Data Processor for
+        all electric transit bookings, AR route telemetry, and Meta WhatsApp Business communications.
+      </p>
+      <ul class="clarity-metrics-list" style="margin-bottom: 1.4rem;">
+        <li><span>Section 25 (Principles)</span> <strong>Data Minimization &amp; Fare Transparency</strong></li>
+        <li><span>Section 26 (Data Subject Rights)</span> <strong>Right to Be Informed, Access &amp; Erasure</strong></li>
+        <li><span>Section 30 (Consent)</span> <strong>Explicit Opt-In for Meta WhatsApp Dispatch</strong></li>
+        <li><span>Section 41 (Data Security)</span> <strong>Encrypted on Google Cloud Platform (GCP)</strong></li>
+      </ul>
+      <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+        <a
+          href="http://kenyalaw.org:8181/exist/kenyalex/actview.xql?actid=No.%2024%20of%202019"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-amber"
+        >
+          Read Full Act on Kenya Law ↗
+        </a>
+        <a
+          href="https://www.odpc.go.ke/data-protection-act/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline-cyan"
+        >
+          Visit ODPC Kenya ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand-wordmark" style="font-size: 1.35rem;">POUGHKEEPSIE LIMITED • SENA TRANSIT ⚡</div>
+        <p style="color: var(--text-muted); font-size: 0.84rem; margin-top: 0.35rem;">
+          SENA Transit ("Twende Kazi — Powering Mombasa") is a flagship product in the Poughkeepsie Limited Transport Ecosystem. Hosted on Google Cloud Platform (GCP).
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="tel:+254700736200">📞 Tel: +254 700 736 200</a>
+        <a href="mailto:info@poughkeepsie.co.ke">✉️ Email: info@poughkeepsie.co.ke</a>
+        <a
+          href="https://www.facebook.com/search/top?q=Poughkeepsie%20Limited"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #60a5fa; font-weight: 700;"
+        >
+          📘 Facebook (Poughkeepsie Limited) ↗
+        </a>
+        <a
+          href="http://kenyalaw.org:8181/exist/kenyalex/actview.xql?actid=No.%2024%20of%202019"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: var(--sena-amber); font-weight: 700;"
+        >
+          🛡️ Kenya Data Protection Act 2019 ↗
+        </a>
+        <a
+          href="https://www.odpc.go.ke/data-protection-act/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ODPC Kenya ↗
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
